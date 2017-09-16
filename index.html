@@ -17,6 +17,10 @@
 		move(){
 			console.log('I am moving');
 		}
+		static writeGender(pregnant){
+			console.log(pregnant.gender);
+
+		}
 	}
 
 	let Baby = new Pregnant('m','12.01.2010',false);
@@ -35,6 +39,7 @@
 	let myBaby = new myPregnant('f','20.04.2018',true,'Sofia');
 	console.log(myBaby);
 	console.log(myBaby.move());
+	Pregnant.writeGender(myBaby);
 
 
 
